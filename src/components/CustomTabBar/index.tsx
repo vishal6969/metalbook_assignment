@@ -11,6 +11,7 @@ import routes from '../../constants/routes';
 import styles from './styles';
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import colors from '../../constants/colors';
+import LinearGradient from 'react-native-linear-gradient';
 
 const TAB_ICONS = {
   [routes.DASHBOARD]: faHouse,
@@ -51,16 +52,19 @@ const CustomTabBar = (props: BottomTabBarProps) => {
           <Pressable
             onPress={onPress}
             onLongPress={onLongPress}
-            style={[
-              styles.tabBarIcon,
-              {backgroundColor: isFocused ? colors.aquaBlue : colors.white},
-            ]}
             key={route.key}>
-            <FontAwesomeIcon
-              size={28}
-              color={isFocused ? colors.black : colors.gray}
-              icon={TAB_ICONS[route.name]}
-            />
+            <LinearGradient
+              style={styles.tabBarIcon}
+              colors={[
+                isFocused ? colors.aquaBlue : colors.white,
+                colors.white,
+              ]}>
+              <FontAwesomeIcon
+                size={28}
+                color={isFocused ? colors.black : colors.gray}
+                icon={TAB_ICONS[route.name]}
+              />
+            </LinearGradient>
           </Pressable>
         );
       })}

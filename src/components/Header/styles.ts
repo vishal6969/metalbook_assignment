@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     borderColor: colors.aquaBlue,
   },
   title: {
-    fontFamily: 'Montserrat-Bold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 22,
     color: colors.txtBlack,
     marginLeft: 16,
