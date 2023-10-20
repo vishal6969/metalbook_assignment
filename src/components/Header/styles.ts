@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   altHeaderStyle: {
     backgroundColor: colors.white,
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     borderColor: colors.aquaBlue,
   },
   title: {

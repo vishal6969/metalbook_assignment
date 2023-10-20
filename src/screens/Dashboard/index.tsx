@@ -76,7 +76,7 @@ const Dashboard = () => {
           subtitle={'Total Income'}
         />
         <BulletinComponent
-          icon={{component: faSackDollar, color: colors.red, size: 24}}
+          icon={{component: faSackDollar, color: colors.primaryRed, size: 24}}
           title={`$${formatNumber(totalExpense)}`}
           subtitle={'Total Expenses'}
           containerStyle={{marginBottom: 24}}

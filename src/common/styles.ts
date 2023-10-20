@@ -17,6 +17,17 @@ const CommonStyles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  rowAlignEnd: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+  },
+  alignCenter: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  spaceBetween: {
+    justifyContent: 'space-between',
+  },
 });
 
 export default CommonStyles;

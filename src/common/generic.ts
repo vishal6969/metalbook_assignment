@@ -25,3 +25,12 @@ export const convertDataToGraphPoints = (
 export const formatNumber = (num: number) => {
   return num.toLocaleString();
 };
+
+export const getDoughnutChartValues = (data: number[], radius: number) => {
+  const circumference = 2 * Math.PI * radius;
+  let totalUnits = 0;
+
+  data.forEach(unit => (totalUnits += unit));
+
+  return data.map(unit => (unit / totalUnits) * circumference);
+};

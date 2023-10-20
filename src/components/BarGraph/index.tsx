@@ -12,7 +12,7 @@ const BarGraph = ({size, data}: {size: number; data: MonthlyIncomeDataI[]}) => {
     <View style={styles.container}>
       {data.map((item, index) => {
         return (
-          <View style={CommonStyles.columnAlignCenter}>
+          <View key={item.id} style={CommonStyles.columnAlignCenter}>
             <View style={[styles.bar, {height: graphPoints[index]}]} />
             <Text style={styles.barLabel}>{item.month}</Text>
           </View>
