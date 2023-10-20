@@ -19,6 +19,22 @@ const styles = StyleSheet.create({
     color: colors.gray1,
     marginTop: 4,
   },
+  toolTipTxt: {
+    fontFamily: 'Montserrat-SemiBold',
+    fontSize: 16,
+    color: colors.white,
+  },
+  toolTipContent: {
+    backgroundColor: colors.teal,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    height: 'auto',
+    borderRadius: 12,
+    width: 'auto',
+  },
+  toolTipBeak: {
+    marginTop: -7,
+  },
 });
 
 export default styles;

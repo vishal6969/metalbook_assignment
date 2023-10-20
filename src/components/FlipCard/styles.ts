@@ -9,6 +9,10 @@ const styles = StyleSheet.create({
     padding: 12,
     height: 108,
     width: 108,
+    backfaceVisibility: 'hidden',
+  },
+  backCard: {
+    position: 'absolute',
   },
   label: {
     fontFamily: 'Montserrat-Medium',
