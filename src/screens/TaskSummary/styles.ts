@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'Montserrat-Bold',
-    fontSize: 24,
+    fontSize: 20,
     color: colors.txtBlack,
   },
   cardContainer: {
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
   separator: {
     height: 1.5,
-    backgroundColor: colors.aquaBlue,
+    backgroundColor: colors.gray2,
   },
   completionRateContainer: {
     paddingTop: 32,
@@ -57,12 +57,11 @@ const styles = StyleSheet.create({
   section2: {
     padding: 28,
     borderTopWidth: 8,
-    borderColor: colors.aquaBlue,
+    borderColor: colors.gray2,
   },
   propertiesNavigationTxt: {
     fontFamily: 'Montserrat-Bold',
     color: colors.gray,
-    fontSize: 16,
     marginRight: 4,
   },
 });

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   headerTxt: {
     fontFamily: 'Montserrat-Bold',
-    fontSize: 24,
+    fontSize: 20,
     color: colors.txtBlack,
   },
   timeDurationTxt: {
@@ -34,14 +34,13 @@ const styles = StyleSheet.create({
   separator: {
     height: 1.5,
     width: '100%',
-    backgroundColor: colors.aquaBlue,
+    backgroundColor: colors.gray2,
   },
   graphSection: {
     paddingVertical: 32,
   },
   avgIncomeTitle: {
     fontFamily: 'Montserrat-Bold',
-    fontSize: 16,
     color: colors.txtBlack,
   },
   avgMonthlyIncome: {

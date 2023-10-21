@@ -14,6 +14,8 @@ const colors = {
   blue: 'rgba(27, 87, 255, 1)',
   transparent: '#ffffff66',
   teal: 'rgba(0, 87, 93, 1)',
+  gray2: '#eff0f2',
+  transparent1: 'rgba(255, 255, 255, 0.1)',
 };
 
 export default colors;

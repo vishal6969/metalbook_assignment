@@ -11,9 +11,10 @@ interface FlipCardI {
   text: string | number;
   icon: IconProp;
   cardStyle?: ViewStyle;
+  backCardTitle: string | number;
 }
 
-const FlipCard = ({label, text, icon, cardStyle}: FlipCardI) => {
+const FlipCard = ({label, text, icon, cardStyle, backCardTitle}: FlipCardI) => {
   const animatedValue = new Animated.Value(0);
   const animatedValueRef = React.useRef(0);
 
@@ -61,9 +62,7 @@ const FlipCard = ({label, text, icon, cardStyle}: FlipCardI) => {
           cardStyle,
           {transform: [{rotateY: backCardRotationValue}]},
         ]}>
-        <Text style={styles.label}>
-          abhsfbvysfdkbvzudkfhvbOdfycSdfybvcWSdfyubVWSDf
-        </Text>
+        <Text style={styles.backCardLabel}>{backCardTitle}</Text>
       </Animated.View>
     </Pressable>
   );

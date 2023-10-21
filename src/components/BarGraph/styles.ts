@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   },
   barLabel: {
     fontFamily: 'Montserrat-SemiBold',
+    fontSize: 12,
     color: colors.gray1,
     marginTop: 4,
   },

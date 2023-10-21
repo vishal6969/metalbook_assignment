@@ -10,9 +10,12 @@ const styles = StyleSheet.create({
     height: 108,
     width: 108,
     backfaceVisibility: 'hidden',
+    overflow: 'hidden',
   },
   backCard: {
     position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   label: {
     fontFamily: 'Montserrat-Medium',
@@ -25,6 +28,11 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     marginRight: -20,
+  },
+  backCardLabel: {
+    fontFamily: 'Montserrat-SemiBold',
+    fontSize: 16,
+    color: colors.white,
   },
 });
 

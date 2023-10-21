@@ -29,7 +29,10 @@ const TaskSummary = () => {
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
       <View style={styles.section1}>
         <Text style={styles.title}>Task Summary</Text>
-        <View style={styles.cardContainer}>
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.cardContainer}>
           {cardsData.map(item => {
             return (
               <FlipCard
@@ -38,10 +41,11 @@ const TaskSummary = () => {
                 text={item.text}
                 icon={item.icon}
                 cardStyle={item.cardStyle}
+                backCardTitle={`Card ${item.id}`}
               />
             );
           })}
-        </View>
+        </ScrollView>
         <View style={styles.navigationLink}>
           <Text style={styles.navigationText}>See all today tasks</Text>
           <FontAwesomeIcon color={colors.gray} icon={faChevronRight} />
